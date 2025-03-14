@@ -1,0 +1,198 @@
+/* Default layout - mobile-first */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: DodgerBlue;
+
+}
+
+.flex-container  {
+  display: flex;
+
+  opacity: 80%;
+  padding: 10px;
+  z-index: 10;
+  /* background-color: DodgIerBlue; */
+
+
+}
+
+
+div {
+  column-gap: 20px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
+}
+
+.left-bar {
+  background-color: #bddbff;
+  width: 100%;
+  padding: 10px;
+  font-family: "Macondo";
+  font-size: 14px;
+  color: #2b005b;
+}
+
+section.plantbox  {
+  
+  background-color: #dedff3;
+  width: 100%;
+  padding: 10px;
+  font-family: "Macondo";
+  font-size: 14px;
+  border: dotted 1.5px #005b2b;
+  color: #2b005b;
+}
+
+/* begin normal css */
+
+.macondo-regular {
+    font-family: "Macondo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  nav.banner  {
+    height: 125px;
+    width: 100%;
+    background-image: url(../images/orangeblossom.png);
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    margin-top: 11%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+  }
+  
+  main {
+    text-align: center;
+    font-family: 'Didot', sans-serif;
+    color: #2b005b;
+    font-size: 18px;  
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #005b2b; 
+    text-align: center; 
+    font-family: 'Macondo', serif;
+    font-size: 48px;
+    font-weight: bolder;
+  }
+  
+  h2 {
+    color: #4287f5;
+    font-family: 'Didot';
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: dotted;
+    border-bottom-color: #4287f5;
+    margin-bottom: 30px
+  }
+
+  
+
+    
+  h3.plantbox {
+    color:	#005b2b ;
+    font-family: 'Macondo';
+    font-size: 36px;
+    text-align: left;
+    padding-left: 10%;
+  }
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+  
+  p  {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 4%;
+    font-family: 'Didot', sans-serif;
+    color: #2b005b;
+  }
+  
+  .cooking  {
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Didot', sans-serif;
+    color: #005b2b;
+  }
+
+  
+  figcaption {
+    font-size: 14px;
+    color: 	#00175c;
+    font-family: 'Didot', sans-serif ;
+  }
+  
+  margin {
+    width: 5%;
+  }
+ 
+.navbar {
+  position: right;
+  width: 25%;
+  background-color: #eee;
+}
+  
+
+  div.container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: "main header" 
+                        "flex-container plantbox" 
+                        "footer footer"          
+  }
+  
+.me  {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border: double;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Didot', sans-serif;
+    color: #2b005b;
+    text-align: right;
+    padding-right: 40px;
+  }
+  
+  /* Media query for screens 768px and above */
+@media (max-width: 768px) {
+  .flex-container  {
+    display: grid;
+    margin-bottom: 10px;
+  
+    opacity: 80%;
+    padding: 10px;
+    z-index: 10;
+    /* background-color: DodgIerBlue; */
+
+    gap: 20px 50px;
+  
+  
+  }
+
+
+}
